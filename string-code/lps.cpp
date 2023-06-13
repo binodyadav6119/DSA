@@ -6,6 +6,7 @@ int main()
     int start=0,len1=1;
     for(int i=1;i<s.length();i++)
     {
+        //even substring
         int l=i-1,h=i;
         while(l>=0 && h<s.length() && s[l]==s[h])
         {
@@ -22,6 +23,7 @@ int main()
 
     for(int i=1;i<s.length();i++)
     {
+        //odd substring
         int l=i-1,h=i+1;
         while(l>=0 && h<s.length() && s[l]==s[h])
         {
